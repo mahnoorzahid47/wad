@@ -4,3 +4,141 @@
 a {
     color: #70579D;
 }
+#main
+{
+    max-width: 800px;
+    margin: auto;
+}
+.article
+{
+    border: 2px solid lightsteelblue;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: ghostwhite;
+}
+.article-name h1
+{
+    font-size: 45px;
+    font-family: inherit;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.article-opt
+{
+    height: 45px;
+    text-align: center;
+    width: 45px;
+    line-height: 3.5;
+    border-radius: 50%;
+    float: right;
+}
+.article-opt:hover
+{
+    color:black;
+}
+.article-overview
+{
+    font-size: 150%;
+
+}
+.article-overview a
+{
+    text-decoration: wavy;
+
+}
+
+.article-overview a:hover
+{
+    text-decoration: wavy;
+}
+.pipe
+{
+    color: darkgreen;
+    margin: 0 5px;
+}
+
+.text-muted
+{
+    opacity: 2;
+}
+.text-small
+{
+    font-size: 50%;
+}
+.lister-list
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.lister-list > .lister-item
+{
+    background-color: aliceblue;
+    margin-bottom: 5px;
+    padding: 10px 10px 20px;
+}
+.lister-list > .lister-item > .lister-item-image
+{
+display: inline-block;
+}
+.lister-list > .lister-item > .lister-item-image img
+{
+    box-shadow: 2px 2px 3px 1px;
+    height: 200px;
+    width: 120px;
+
+}
+.lister-list > .lister-item > .lister-item-content
+{
+    width: 80%;
+    float: unset
+
+}
+.lister-list > .lister-item > .lister-item-content >h3
+{
+   margin: 0 0 0.5em;
+    padding:0;
+
+}
+.lister-list > .lister-item > .lister-item-content >h3 > a
+{
+    color: #70579D;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'bangers',cursive;
+    letter-spacing: 5px;
+
+}
+
+.lister-list > .lister-item > .lister-item-content >h3 >.list-item-year
+{
+font-size: medium;
+}
+
+.lister-list > .lister-item > .lister-item-content >.lister-item-summary
+{
+    line-height: 140%;
+    font-size: 15px;
+
+
+}
+.lister-list > .lister-item > .lister-item-content >.lister-item-summary::first-letter {
+
+    color: #70579D;
+    font-size: 1.3em;
+}
+p.lister-item-summary::selection
+{
+    color: beige;
+    background: red;
+
+}
+.lister-list > .lister-item > .lister-item-content a{
+    text-decoration: none;
+    color: #70579D;
+}
+
+
+
+
