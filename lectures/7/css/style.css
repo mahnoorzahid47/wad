@@ -1,6 +1,15 @@
 #main {
-    /* add CSS here */
+    /* add CmeSS here */
+    max-width: 450px;
+    margin: auto;
 }
 .pet {
-    /* add CSS here */
+    /* add cSS here */
+    border: dashed #fa0064;
+    border-radius: 30px;
+    cursor: grabbing;
+    background-color: white;
+    box-shadow: 16px 15px 11px 1px black;
+
 }
+
