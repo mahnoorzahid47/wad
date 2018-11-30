@@ -44,7 +44,7 @@ displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext()
 {
-  currentQuestion= currentQuestion+1;
+    currentQuestion= currentQuestion+1;
     displayCurrentQuestion();
 
 }
@@ -56,8 +56,14 @@ function displayCurrentQuestion()
     document.getElementById("choice-list").innerHTML="";
     for (var x=0; x<4; x++)
     {
-      document.getElementById("choice-list").innerHTML+= '<li><input type="radio" name="q">'+ questions[currentQuestion].choices[x] + '<li>'
+      document.getElementById("choice-list").innerHTML+= '<li><input type="radio" name="q" value="'+x+'">'+ questions[currentQuestion].choices[x] + '<li>'
     }
+    if(document.querySelector("input[name='t1']:checked").value==questions[currentQuestion].correctAnswer){
+        correctAnswer++;
+    }
+document.textContent("your score is "+ correctAnswers);
+
+
 }
 
 function resetQuiz() {
@@ -69,7 +75,8 @@ function displayScore() {
     document.getElementById("result").innerHTML = "you scored: " + correctAnswers + " out of: " + questions.length;
     document.getElementById("result").style.display = 'block';
 }
-function hideScore() {
+function hideScore()
+{
     document.getElementById("result").style.display = 'none';
 }
 
