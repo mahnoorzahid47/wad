@@ -58,7 +58,7 @@ function displayCurrentQuestion()
     {
       document.getElementById("choice-list").innerHTML+= '<li><input type="radio" name="q" value="'+x+'">'+ questions[currentQuestion].choices[x] + '<li>'
     }
-    if(document.querySelector("input[name='t1']:checked").value==questions[currentQuestion].correctAnswer){
+    if(document.querySelector("input[name='t1']:checked").value===questions[currentQuestion].correctAnswer){
         correctAnswer++;
     }
 document.textContent("your score is "+ correctAnswers);
