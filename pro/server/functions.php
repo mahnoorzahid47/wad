@@ -1,6 +1,5 @@
 <?php
 require_once "db_connection.php";
-
 function getCats(){
     global $con;
     $getCatsQuery = "select * from categories";
@@ -19,5 +18,15 @@ function getBrands(){
         $brand_id = $row['brand_id'];
         $brand_title = $row['brand_title'];
         echo "<li><a class='nav-link'  href='#'>$brand_title</a></li>";
+    }
+}
+function getProducts(){
+    global $con;
+    $getProsQuery = "select * from products";
+    $getProsResult = mysqli_query($con,$getProsQuery);
+    while($row = mysqli_fetch_assoc($getProsResult)){
+        $pro_id = $row['pro_id'];
+        $pro_title = $row['pro_title'];
+        echo "<li><a class='nav-link'  href='#'>$pro_title</a></li>";
     }
 }
